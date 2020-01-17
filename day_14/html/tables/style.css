@@ -1,0 +1,19 @@
+.table1, th,td{
+    border: 1px ridge teal;
+    border-collapse: collapse;
+    padding:5px;
+}
+
+.table1{
+    width: 500px;
+}
+
+th{
+    background-color: wheat;
+}
+
+tr:nth-child(odd) td{
+    background-color: brown;
+}
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" href="ExternalStylesheet/homestylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShowOnWheels</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="logo-caption">
+            <p>The Ultimate Way Of Booking Movie Tickets</p>
+        </div>
+        <div class="logo-call">
+            <img src="images/callus.png">
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Upcoming movies</a></li>
+            </ul>
+        </div>
+
+        <!-- form starts -->
+
+
+        <div class="form1">
+            <h1>Book Your Tickets here..</h1>
+
+            <form>
+                <fieldset>
+                    <legend>Your Personal Info</legend>
+                <labe>Name:</labe>
+                <input type="text" placeholder="enter your name" required> <br>
+                <lable>Date:</lable>
+                <input type="date" placeholder="date"><br>
+            </fieldset>
+
+                <fieldset>
+                    <legend>Book Your Movie</legend>
+                    <lable></lable>Movie:
+                    <select>
+                        <option>Select the movie</option>
+                        <option>movie 1</option>
+                        <option>movie 2</option>
+                        <option>movie 2</option>
+                    </select><br>
+                    <lable>Show Timing:</lable>
+                    <select>
+                        <option>Select the time</option>
+                        <option>12-2</option>
+                        <option>2-5</option>
+                        <option>6-9</option>
+                    </select><br>
+                    <lable>Select Class:</lable>
+                    platinum<input type="radio" name="class" checked>
+                    Gold<input type="radio" name="class">
+                    Exclusive<input type="radio" name="class"><br>
+
+                    <lable>Number of Tickets:</lable>
+                    <input type="number" placeholder="tickets" max="4" min="1"><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Amount</legend>
+                    <lable>Price:</lable>
+                    <input type="number" disabled placeholder="$$$$$$$$$$"><br>
+                    <lable>Total Price:</lable>
+                    <input type="number" disabled placeholder="$$$$$$$$$/-"><br>
+                </fieldset>
+
+                <input type="reset" class="sub">
+                <input type="submit" class="sub">
+
+            </form>
+        </div>
+
+        <!-- form ends -->
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

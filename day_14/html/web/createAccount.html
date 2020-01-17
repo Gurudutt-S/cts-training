@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" href="ExternalStylesheet/homestylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShowOnWheels</title>
+
+    <script>
+        function details() {
+            var user = document.getElementById("user").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            window.alert("username: " + user + "\nPhone: " + phone+"\nEmail:"+email);
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="logo-caption">
+            <p>The Ultimate Way Of Booking Movie Tickets</p>
+        </div>
+        <div class="logo-call">
+            <img src="images/callus.png">
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Upcoming movies</a></li>
+            </ul>
+        </div>
+
+        <!-- form starts -->
+
+
+        <div class="create-form">
+            <h1>Create Account</h1>
+
+            <form onsubmit="details()">
+                <fieldset>
+                    <legend>Enter your Details</legend>
+                    <label>Name:</label>
+                    <input type="text" placeholder="enter your name" required name="usr" id="user"> <br>
+                    <label>Phone:</label>
+                    <input type="phone" placeholder="#########" name="pass" id="phone"><br>
+                    <label>E-mail:</label>
+                    <input type="email" placeholder="abc@asd.com" name="pass" id="email">
+                </fieldset>
+
+
+                <input type="reset" class="sub">
+                <input type="submit" class="sub">
+
+            </form>
+        </div>
+
+        <!-- form ends -->
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

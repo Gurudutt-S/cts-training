@@ -1,0 +1,58 @@
+p {
+    color: green;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: greenyellow;
+}
+
+h2 {
+    color: magenta;
+}
+
+h3 {
+    color: mediumaquamarine;
+}
+
+h4{
+    color: midnightblue;
+}
+
+h5{
+    color: orange;
+}
+
+h6{
+    color: sienna;
+}
+
+body{
+    text-align: center;
+}
+
+.headings{
+    border:1px solid rebeccapurple;
+    background-color: mintcream;
+}
+
+.outer{
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    position:relative;
+}
+.inner{
+    border: 1px solid tomato;
+    height: 100px;
+    width:100px;
+    position: absolute;
+    right:0px;
+    background-color:green;
+     
+}
+
+.para~p{
+    color:red;
+}
