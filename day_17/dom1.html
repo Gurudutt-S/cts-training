@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>paragraph one</p>
+    <p>paragraph two</p>
+    <div contenteditable="true"></div>
+    <div style="width: 90pxS;">
+        <strong>hello</strong>
+    </div>
+    <div>div one</div>
+    <p>paragraph three</p>
+    <div>div two</div>
+
+    <button>click me</button>
+
+    <table>
+
+    </table>
+
+
+
+
+    <script>
+        var firstDiv = document.querySelector('div')
+        firstDiv.style.color = 'teal'
+
+        var all = document.querySelectorAll('p')
+        for (var i of all) {
+            i.style.color = 'red'
+        }
+
+        var addevent = document.querySelector('button')
+        addevent.addEventListener('click', display)
+
+        function display() {
+            alert('hello');
+
+        }
+        addevent.removeEventListener('click', display)
+
+        var create = document.createElement('p')
+        create.textContent = 'hai'
+
+        var div = document.querySelector('div')
+        var strong = document.createElement('strong')
+        strong.textContent = 'hai'
+        div.appendChild(strong)
+
+
+        div.removeChild(strong)
+
+        // var em = document.createElement('em')
+        // var strongg = document.querySelector('strong')
+        // var divv = document.querySelector('div')
+        // em.textContent = 'hai'
+        // divv.replaceChild(em, strongg)
+
+        var strong = document.querySelector('strong');
+        var copy = strong.cloneNode(true);
+        var div = document.querySelector('div');
+        div.appendChild(copy);
+
+        var em = document.createElement('em');
+        var strong = document.querySelector('strong');
+        var div = document.querySelector('div');
+        em.textContent = 'hi';
+        div.insertBefore(em, strong);
+
+        var table=document.querySelector('table')
+        var df=document.createDocumentFragment()
+        for(var i=0;i<5;i++)
+        {
+        var tr=document.createElement('tr')
+        var td=document.createElement('td')
+        td.textContent=i
+        tr.appendChild(td)
+        df.appendChild(tr)
+        }
+        table.appendChild(df)
+
+
+        var style=getComputedStyle(document.querySelector('div'))
+        alert(style.width) 
+
+        var para=document.querySelector('div')
+        para.setAttribute('contentedittable','true')
+
+        var div=document.querySelector('div')
+        alert(div.getAttribute('contenteditable'))
+
+        var para=document.querySelector('div')
+        para.removeAttribute('contentedittable')
+
+
+    </script>
+
+</body>
+
+</html>
