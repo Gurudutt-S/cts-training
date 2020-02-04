@@ -1,0 +1,10 @@
+<web-app>
+	<!-- Servlet Registration -->
+	<servlet>
+		<servlet-name>Hello Servlet</servlet-name>
+		<servlet-class>com.cts.training.controller.HelloServlet</servlet-class>
+	</servlet>
+
+	<!-- Servlet Mapping -->
+
+</web-app>

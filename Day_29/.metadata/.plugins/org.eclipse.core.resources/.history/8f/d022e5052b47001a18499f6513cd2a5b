@@ -1,0 +1,9 @@
+<web-app>
+	<servlet>
+
+		<servlet-name>Hello Servlet</servlet-name>
+
+	</servlet>
+
+
+</web-app>

@@ -1,0 +1,9 @@
+package com.cts.training.controller;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/login")
+public class SignInServlet extends HttpServlet{
+
+}

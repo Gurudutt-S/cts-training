@@ -1,0 +1,10 @@
+
+public class CSVToMysql {
+
+	public static void main(String[] args) {
+		
+		String url="com.mysql.jdbc.driver";
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.cts.training.controller;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/login")
+public class SignInServlet extends HttpServlet{
+	
+	public boolean isValid(String username ,String password) {
+		String query="select * from helloServlet where username=?  and password=?";
+		
+		
+		return false;
+		
+	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+	{
+		
+			
+	}
+
+}

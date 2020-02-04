@@ -1,0 +1,8 @@
+<web-app>
+	<servlet>
+		<servlet-name>Hello Servlet</servlet-name>
+		<servlet-class>com.cts.training.controller.HelloServlet</servlet-class>
+	</servlet>
+
+
+</web-app>
