@@ -1,0 +1,6 @@
+<%@ include file="header.jsp" %>
+
+<<jsp:useBean id="user"></jsp:useBean>
+
+</body>
+</html>

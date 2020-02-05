@@ -1,0 +1,6 @@
+<%@include file="header.jsp"%>
+
+<c:out value="" HelloWorlds"></c:out>
+
+</body>
+</html>

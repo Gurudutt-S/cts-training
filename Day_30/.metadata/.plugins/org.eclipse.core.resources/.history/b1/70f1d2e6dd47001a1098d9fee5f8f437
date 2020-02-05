@@ -1,0 +1,12 @@
+<%@ include file="header.jsp" %>
+
+	<% out.print("Welcome to JSP Implicit Objects...."); %>
+	
+	<% 
+		String name=request.getParameter("name");
+		out.print(name);
+		
+	%>
+
+</body>
+</html>

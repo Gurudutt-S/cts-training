@@ -1,0 +1,15 @@
+<%@include file="header.jsp"%>
+
+<c:out value="Hello World"></c:out>
+<c:set var="name" value="Gurudutt" />
+<br>
+Name:
+<c:out value="${name }"></c:out>
+
+<c:remove var="name" />
+<br>
+Name:
+<c:out value="${name }"></c:out>
+
+</body>
+</html>

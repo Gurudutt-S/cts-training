@@ -1,0 +1,6 @@
+<%@ include file="header.jsp"%>
+
+${parm.name}
+
+</body>
+</html>

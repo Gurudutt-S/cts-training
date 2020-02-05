@@ -1,0 +1,15 @@
+<%@ include file="header.jsp"%>
+
+<h2>Request Form</h2>
+<form action="index.jsp">
+	name:<input type="text" name="name"> <input type="submit">
+</form>
+
+<h2>Response Form</h2>
+<form action="action.jsp" method="post">
+	name:<input type="text" name="username"> password:<input
+		type="password" name="password"> <input type="submit">
+</form>
+
+</body>
+</html>

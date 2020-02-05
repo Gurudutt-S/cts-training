@@ -1,0 +1,23 @@
+<%@include file="header.jsp"%>
+
+<c:out value="Hello World"></c:out>
+<c:set var="name" value="Gurudutt" />
+<br>
+Name:
+<c:out value="${name }"></c:out>
+
+<c:remove var="name" />
+<br>
+Name:
+<c:out value="${name }"></c:out>
+
+<%-- <c:forEach var="i" begin="1" end="10" step="1">
+	<h2>${i}</h2>
+</c:forEach> --%>
+<c:forEach var="i" items="[1,2,3,3,4,5,6,333,4,5,5,6574343,]">
+	<h2>${i}</h2>
+</c:forEach>
+
+
+</body>
+</html>

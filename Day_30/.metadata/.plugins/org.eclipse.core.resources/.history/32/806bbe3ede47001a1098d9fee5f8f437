@@ -1,0 +1,9 @@
+<%@ include file="header.jsp" %>
+	
+	<form action="index.jsp">
+		name:<input type="text" name="name">
+			<input type="submit">	
+	</form>
+	
+</body>
+</html>
