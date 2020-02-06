@@ -1,0 +1,12 @@
+package com.cts.training.model;
+
+public class UserEntity {
+	
+	private int id;
+	private String userName;
+	private String password;
+	private String email;
+	private long phone;
+	private boolean isEnabled;
+
+}
