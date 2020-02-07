@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="collection"
+		class="com.cts.training.model.CollectionInterface">
+		<property name="list">
+			<list>
+				<value>1. Java</value>
+				<value>2. Python</value>
+			</list>
+		</property>
+
+		<property name="set">
+			<set>
+				<value>1. IT Employees</value>
+				<value>2. Test Engineers</value>
+			</set>
+		</property>
+
+		<property name="map">
+			<map>
+				<entry key="0" value="Map(Emails)" />
+				<entry key="1" value="Map(Account Numbers)" />
+			</map>
+		</property>
+	</bean>
+</beans>

@@ -4,17 +4,27 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="user" class="com.cts.training.model.UserEntity">
-		<!-- <property name="id" value="101"></property> <property name="userName" 
-			value="admin"></property> <property name="password" value="admin@123"></property> 
-			<property name="email" value="admin@gmail.com"></property> <property name="phone" 
-			value="176537533"></property> <property name="enabled" value="true"></property> -->
+		<property name="id" value="101"></property>
+		<property name="userName" value="admin"></property>
+		<property name="password" value="admin@123"></property>
+		<property name="email" value="admin@gmail.com"></property>
+		<property name="phone" value="176537533"></property>
+		<property name="enabled" value="true"></property>
+		<property name="address">
+			<bean name="address"
+				class="com.cts.training.model.AddressEntity">
+				<property name="id" value="101" />
+				<property name="houseNumber" value="F-123" />
+				<property name="city" value="New Delhi" />
+				<property name="state" value="Haryana"></property>
+			</bean>
+		</property>
 
-		<constructor-arg value="102" name="id" type="int" />
-		<constructor-arg value="user" name="username" />
-		<constructor-arg value="password" name="password" />
-		<constructor-arg value="admin@gmail.com" name="email" />
-		<constructor-arg value="234234" name="phone" />
-		<constructor-arg value="true" name="enabled" />
+		<!-- <constructor-arg value="102" name="id" type="int" /> <constructor-arg 
+			value="user" name="username" /> <constructor-arg value="password" name="password" 
+			/> <constructor-arg value="admin@gmail.com" name="email" /> <constructor-arg 
+			value="234234" name="phone" /> <constructor-arg value="true" name="enabled" 
+			/> -->
 
 
 	</bean>

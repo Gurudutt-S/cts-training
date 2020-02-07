@@ -14,12 +14,14 @@ public class UserEntity implements Serializable {
 	private String email;
 	private long phone;
 	private boolean enabled;
+	private AddressEntity address;
 
 	public UserEntity() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public UserEntity(int id, String userName, String password, String email, long phone, boolean enabled) {
+	public UserEntity(int id, String userName, String password, String email, long phone, boolean enabled,
+			AddressEntity address) {
 		super();
 		this.id = id;
 		this.userName = userName;
@@ -27,6 +29,7 @@ public class UserEntity implements Serializable {
 		this.email = email;
 		this.phone = phone;
 		this.enabled = enabled;
+		this.address = address;
 	}
 
 	public int getId() {
@@ -75,6 +78,14 @@ public class UserEntity implements Serializable {
 
 	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
+	}
+
+	public AddressEntity getAddress() {
+		return address;
+	}
+
+	public void setAddress(AddressEntity address) {
+		this.address = address;
 	}
 
 	@Override
