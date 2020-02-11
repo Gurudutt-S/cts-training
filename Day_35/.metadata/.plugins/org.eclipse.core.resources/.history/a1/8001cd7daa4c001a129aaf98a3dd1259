@@ -1,0 +1,44 @@
+package com.cts.project.middle.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.cts.project.bean.User;
+import com.cts.project.dao.UserDAO;
+
+@Controller
+public class HomeController {
+
+	@Autowired
+	private UserDAO userDAO;
+
+	// any of the two annotations can be used.
+	// @GetMapping("/")
+	// OR
+	@RequestMapping("/")
+	public String indexPage(Model model) {
+		model.addAttribute("message", "Wecome to Spring MVC");
+//		List<String> names = new ArrayList<String>();
+//		addNames(names);
+//		model.addAttribute("list", names);
+
+		List<User> users = userDAO.getAllUsers();
+		model.addAttribute("list", users);
+		return "index";
+	}
+
+	private void addNames(List<String> names) {
+		names.add("Divya");
+		names.add("Hameem");
+		names.add("guru");
+		names.add("syed");
+		names.add("vishnavi");
+
+	}
+
+}

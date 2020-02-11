@@ -1,0 +1,20 @@
+package com.cts.project.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+@Configuration
+@EnableTransactionManagement
+@ComponentScan(basePackages = "com.cts.project")
+public class HibernateConfiguration {
+
+	@Bean
+	public LocalSessionFactoryBean sessionFactory() {
+		
+		return sessionFactory;
+	}
+	
+}
