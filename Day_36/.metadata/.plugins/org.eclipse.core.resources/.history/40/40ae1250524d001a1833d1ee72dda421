@@ -1,0 +1,22 @@
+package com.cts.project.middle.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@Controller
+public class UserController {
+	
+	@GetMapping("/user-home")
+	public String UserPage() {
+		
+		return "users";
+	}
+	
+	@PostMapping("/user/save")
+	public String addUser()
+	{
+		return "";
+	}
+
+}

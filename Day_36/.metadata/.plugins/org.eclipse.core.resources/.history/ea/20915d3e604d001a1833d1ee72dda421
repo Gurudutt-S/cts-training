@@ -1,0 +1,15 @@
+<%@include file="header.jsp" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+	<form:form action="" modelAttribute="ipo">
+	
+		<div>
+			<form:label path="id">ID</form:label>
+			<form:input path="id"/>
+		</div>
+	
+	</form:form>
+
+</body>
+</html>

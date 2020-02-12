@@ -1,0 +1,19 @@
+package com.cts.project.middle.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.cts.project.bean.IPODetailEntry;
+
+@Controller
+public class IPOController {
+	
+	@GetMapping("/ipo-home")
+	public String IPOPage(Model model)
+	{
+		model.addAttribute("ipo", new IPODetailEntry());
+		return "ipos";
+	}
+
+}

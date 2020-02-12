@@ -1,0 +1,79 @@
+package com.cts.project.daoimpl;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.cts.project.bean.StockPrice;
+import com.cts.project.dao.StockPriceDAO;
+
+@Transactional
+@Repository(value = "StockPriceDAO")
+public class StockPriceDAOImpl implements StockPriceDAO {
+
+	@Autowired
+	SessionFactory sessionFactory;
+
+	@Override
+	public boolean saveStockPrice(StockPrice Stock) {
+		try {
+			sessionFactory.getCurrentSession().save(Stock);
+			return true;
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	@Override
+	public boolean updateStockPrice(StockPrice Stock) {
+		try {
+			sessionFactory.getCurrentSession().update(Stock);
+			return true;
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	@Override
+	public boolean deleteStockPrice(StockPrice Stock) {
+		try {
+			sessionFactory.getCurrentSession().delete(Stock);
+			return true;
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	@Override
+	public StockPrice getStockPriceByCode(int comanyCode) {
+		try {
+			return sessionFactory.getCurrentSession().get(StockPrice.class, comanyCode);
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	@Override
+	public List<StockPrice> getAllStockPrice() {
+		try {
+			Session session = SessionFactory.openSession();
+			Transaction transaction = session.beginTransaction();
+			List<StockPrice> prices = session.createQuery("FROM StockPrice").list();
+			transaction.commit();
+			session.close();
+			return prices;
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+}

@@ -1,0 +1,44 @@
+<%@include file="header.jsp"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<c:url var="ipoUrl" value="/ipo/save" />
+<form:form action="${ipoUrl }" modelAttribute="ipo">
+
+	<div>
+		<form:label path="id">ID</form:label>
+		<form:input path="id" />
+	</div>
+	<div>
+		<form:label path="companyName">companyName</form:label>
+		<form:input path="companyName" />
+	</div>
+	<div>
+		<form:label path="opendateTime">opendateTime</form:label>
+		<form:input path="opendateTime" />
+	</div>
+	<div>
+		<form:label path="priceperShare">priceperShare</form:label>
+		<form:input path="priceperShare" />
+	</div>
+	<div>
+		<form:label path="remarks">remarks</form:label>
+		<form:input path="remarks" />
+	</div>
+	<div>
+		<form:label path="stockExchange">stockExchange</form:label>
+		<form:input path="stockExchange" />
+	</div>
+	<div>
+		<form:label path="totalNoOfShares">totalNoOfShares</form:label>
+		<form:input path="totalNoOfShares" />
+	</div>
+
+	<div>
+		<input type="submit" value="Register">
+	</div>
+
+</form:form>
+
+</body>
+</html>
