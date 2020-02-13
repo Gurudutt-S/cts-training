@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\LENOVO\Desktop\java programs\maven\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2639763328.index
+\StockExchangeChartingWeb\src\main\java
+C:\Users\LENOVO\Desktop\java programs\maven\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\437941653.index
+\StockExchangeChartingWeb\src\main\resources

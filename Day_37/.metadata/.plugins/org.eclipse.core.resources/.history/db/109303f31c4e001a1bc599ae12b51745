@@ -1,0 +1,14 @@
+package com.cts.project.middle.controller;
+
+import org.springframework.ui.Model;
+
+import com.cts.project.bean.StockPrice;
+
+public class StockPriceController {
+	
+	public String stockPricePage(Model model) {
+		model.addAttribute("stockPrice", new StockPrice());
+		return "stockPrices";
+	}
+
+}

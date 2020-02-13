@@ -1,0 +1,10 @@
+package com.cts.project.middle.controller;
+
+public class UserController {
+	
+	public String UserPage() {
+		
+		return "users";
+	}
+
+}

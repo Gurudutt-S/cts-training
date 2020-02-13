@@ -1,0 +1,6 @@
+<%@include file="header.jsp" %>
+
+<h2>Enter Stock Price Details</h2>
+
+</body>
+</html>

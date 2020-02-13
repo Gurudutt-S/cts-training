@@ -1,0 +1,43 @@
+package com.cts.training.dao.impl;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.cts.training.bean.UserDemo;
+import com.cts.training.dao.UserDemoDAO;
+
+public class UserDemoImpl implements UserDemoDAO {
+	
+	private JdbcTemplate jdbcTemplate;
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate)
+	{
+		this.jdbcTemplate=jdbcTemplate;
+	}
+
+	public boolean saveUser(UserDemo user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean deleteUser(UserDemo user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean updateUser(UserDemo user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public UserDemo getUserById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<UserDemo> getAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,41 @@
+<%@include file="header.jsp" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<h2>Enter Stock Price Details</h2>
+
+<c:url var="stockPriceUrl" value=""/> 
+
+<div>
+<form:form action="${stockPriceUrl }" modelAttribute="stockPrice">
+	<div>
+		<form:label path="companyCode">companyCode</form:label>
+		<form:input path="companyCode"/>
+	</div>
+	<div>
+		<form:label path="currentPrice">currentPrice</form:label>
+		<form:input path="currentPrice"/>
+	</div>
+	<div>
+		<form:label path="date">date</form:label>
+		<form:input path="date"/>
+	</div>
+	<div>
+		<form:label path="stockExchange">stockExchange</form:label>
+		<form:input path="stockExchange"/>
+	</div>
+	<div>
+		<form:label path="time">time</form:label>
+		<form:input path="time"/>
+	</div>
+	
+	<div>
+		<input type="submit" value="Register">
+	</div>
+</form:form>
+
+</div>
+
+
+</body>
+</html>

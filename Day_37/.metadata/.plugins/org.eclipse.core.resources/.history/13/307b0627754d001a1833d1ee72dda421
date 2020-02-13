@@ -1,0 +1,17 @@
+<%@ include file="header.jsp"%>
+
+<h2>${message}</h2>
+<hr>
+
+<table>
+	<tr>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+</table>
+
+</body>
+</html>
