@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+C:\Users\LENOVO\Desktop\java programs\Day_42\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+793769276.index

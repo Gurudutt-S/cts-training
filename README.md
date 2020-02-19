@@ -21,3 +21,7 @@
 13 FEB 2020 [Day 37] : Spring MVC CRUD operation using JDBC Template.
 
 14 FEB 2020 [Day 38] : Spring security, filter.
+
+15 FEB 2020 [Day 39] : Internal Hackathon.
+
+19 FEB 2020 [Day 42] : Spring Web, Spring Boot.
