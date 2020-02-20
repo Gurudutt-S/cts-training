@@ -70,5 +70,8 @@
 
 15 FEB 2020 [Day 39] : Internal Hackathon.
 
-19 FEB 2020 [Day 42] : Spring Web, Spring Boot.
+19 FEB 2020 [Day 42] : Spring Web, Spring Boot intro.
+
+20 FEB 2020 [Day 43] : Spring Boot. 
+
 
