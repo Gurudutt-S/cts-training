@@ -75,3 +75,5 @@
 20 FEB 2020 [Day 43] : Spring Boot. 
 
 21 FEB 2020 [Day 44] :Spring Boot Security
+
+29 FEB 2020 [Day 51] :CodeSprint Angular.
