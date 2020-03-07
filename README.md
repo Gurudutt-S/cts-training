@@ -85,3 +85,5 @@
 4 FEB 2020 [Day 54] : integration testing , mock testing
 
 5 FEB 2020 [Day 55] : inter-services communication, netflix feingclient, zool. 
+
+7 FEB 2020 [Day 57] : hightcharts
